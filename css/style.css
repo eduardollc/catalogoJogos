@@ -1,0 +1,37 @@
+* {
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 1fr;
+
+}
+
+.titulo-principal {
+    
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+.centro {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+}
+
+.rodape{
+
+    padding: 20px;
+
+}
