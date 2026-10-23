@@ -1,37 +1,58 @@
 * {
- margin: 0;
- padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+min-height: 100vh;
 
-    min-height: 100vh;
+/* Controlar linhas e colunas simultaneamente */
+display: grid;
 
-    display: grid;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: auto, 1fr;
+/* Define como as colunas e as linhas de um layout serão organizadas */
+grid-template-columns: 1fr;
+grid-template-rows: 180px 1fr auto;
 
 }
 
-.titulo-principal {
-    
-    text-align: center;
-    padding: 20px;
-    background-color: black;
+.titulo-principal{
+    background-color: #0B1220;
     color: white;
 
-}
-
-.centro {
+    /*Coloca os elementos um embaixo do outro*/
     flex-direction: column;
+
+    /* Ativa o Flexbox e permite alinhar os elementos filhos */
     display: flex;
-    padding: 20px;
+
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
 }
 
-.rodape{
+.titulo-principal h1 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px; /* Espaço interno*/
+    border-style: solid; /* Tipo da borda*/
+    border-radius: 100px; /* Borda arredondada*/
+    border-width: 2px; /* Espesura da borda*/
+    border-color: #8B5CF6; /* Cor da borda*/
 
-    padding: 20px;
 
+    margin-bottom: 25px; /* Espaçamento do botão*/
+}
+
+
+.titulo-principal p{
+    color: rgb(218, 218, 218);
+    font-family: 'Courier New', Courier, monospace; /* Fonte */
+    max-width: 600px; /* Largura máxima de um elemento*/
+    text-align: center; /* Centralizar elemento*/
+}
+
+.centro{
+    background-color: #111C2E;
+    color: white;
 }
