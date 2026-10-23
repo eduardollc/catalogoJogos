@@ -12,7 +12,7 @@ display: grid;
 
 /* Define como as colunas e as linhas de um layout serão organizadas */
 grid-template-columns: 1fr;
-grid-template-rows: 180px 1fr auto;
+grid-template-rows: 180px 1fr 50px;
 
 }
 
@@ -48,11 +48,109 @@ grid-template-rows: 180px 1fr auto;
 .titulo-principal p{
     color: rgb(218, 218, 218);
     font-family: 'Courier New', Courier, monospace; /* Fonte */
-    max-width: 600px; /* Largura máxima de um elemento*/
+    max-width: 650px; /* Largura máxima de um elemento*/
     text-align: center; /* Centralizar elemento*/
 }
 
-.centro{
+.titulo-principal span {
+    color: #8B5CF6;
+}
+
+.centro {
     background-color: #111C2E;
     color: white;
+    display: flex;
+    padding: 50px;
+    gap: 25px; /* Espaçamento entre os elementos */
+}
+
+
+.jogos-favoritos{
+    padding: 10px 20px;
+    flex: 2;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: #8B5CF6;
+}
+
+.jogos-desejados{
+    max-width: 600px;
+    padding: 20px 40px;
+    flex: 1;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: #8B5CF6;
+}
+
+
+.centro table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.centro th{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(218, 218, 218);
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #243247;
+}
+
+.centro td{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #243247;
+}
+
+.centro ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.centro li{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #243247;
+    list-style: none;
+}
+
+.jogos-favoritos img {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.jogos-desejados img {
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.jogos-favoritos h2{
+    padding: 15px;
+    color: rgb(218, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.jogos-desejados h2{
+    padding: 15px;
+    color: rgb(218, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rodape{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #50358f;
+    color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
